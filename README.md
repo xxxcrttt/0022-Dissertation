@@ -94,7 +94,9 @@ The orginal design can be found here.
 
 ```draw.text((100, 120), label, fill = (250, 240, 230),font=Font1)```
  
+5. running the script
 
+```python images.py modelfile.eim 0```
 
 ### Output
 
