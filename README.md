@@ -77,6 +77,25 @@ The orginal design can be found here.
 |Prusa 3D printer| 
 
 
+### Code Design
+1. define the MQTT client, subscribe and publish data:
+
+```def connect_mqtt()``` ```client.connect(broker, port)``` ``` client.publish(topic, label)```
+ 
+ 2. control the Lepton to capture image: 
+
+```with Lepton("/dev/spidev0.1") as l:``` ```cv2.imwrite("image111.jpg", np.uint8(a))```
+
+3. Pass the image into model to predict the label: 
+
+```if "classification" in res["result"].keys():``` ```score = res['result']['classification'][label]```
+
+4. Setup LCD screen and display the result 
+
+```draw.text((100, 120), label, fill = (250, 240, 230),font=Font1)```
+ 
+
+
 ### Output
 
 <img src='https://github.com/xxxcrttt/0022-Dissertation/blob/main/figure/9661660914689_.pic_hd.jpg' height=300 center=/align>
