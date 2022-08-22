@@ -5,7 +5,7 @@ This is the dissertation project for CASA Connected Environment.
 <img src='https://github.com/xxxcrttt/0022-Dissertation/blob/main/figure/9641660913096_.pic.jpg' height=300 center=/align>
 
 ## Overview
-This project uses a low-cost infrared imaging camera **FLIR Lepton**. It deploys the lightweight neural network, **MobileNet** to a tiny single-board computer **Raspberry Pi**. The dataset and model was trained on Edge Inpulse, ([Edge Impulse](https://studio.edgeimpulse.com/public/112844/latest)). By evaluating different model experiments, this project achieved an accuracy of 96.2%, and can successfully distinguish up to 7 people. 
+This project uses a low-cost infrared imaging camera **FLIR Lepton**. It deploys the lightweight neural network, **MobileNet** to a tiny single-board computer **Raspberry Pi**. The dataset and model were trained on Edge Impulse, ([Edge Impulse](https://studio.edgeimpulse.com/public/112844/latest)). By evaluating different model experiments, this project achieved an accuracy of 96.2%, and can successfully distinguish up to 7 people. 
 
 FLIR Lepton: 
 
